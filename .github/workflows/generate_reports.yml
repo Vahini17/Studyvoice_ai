@@ -1,0 +1,42 @@
+name: Generate Project Excel Reports
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  generate-reports:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Generate Reports
+      run: |
+        echo "Generating Project Files Report..."
+        echo "RelativePath,Name,Size(Bytes),Extension" > project_files.csv
+        find . -type f -not -path '*/.*' -not -path './node_modules/*' -not -path './build/*' -not -path './.dart_tool/*' -not -path './web_app/node_modules/*' | while read -r file; do
+          relpath="${file#./}"
+          filename=$(basename "$file")
+          size=$(stat -c%s "$file")
+          ext="${filename##*.}"
+          if [ "$ext" = "$filename" ]; then
+            ext=""
+          fi
+          echo "\"$relpath\",\"$filename\",$size,\"$ext\"" >> project_files.csv
+        done
+
+        echo "Generating Project Commits Report..."
+        git log --pretty=format:'"%h","%an","%ad","%s"' > project_commits.csv
+
+    - name: Upload Reports as Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: Project-Excel-Reports
+        path: |
+          project_files.csv
+          project_commits.csv
