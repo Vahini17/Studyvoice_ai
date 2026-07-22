@@ -136,6 +136,7 @@ def navigate_to(driver, path=""):
     url = f"{BASE_URL}{path}"
     driver.get(url)
     wait_for_page_load(driver)
+    time.sleep(1)  # Allow React Splash screen (500ms timer in App.jsx) to clear
 
 
 def wait_for_page_load(driver, timeout=PAGE_LOAD_TIMEOUT):

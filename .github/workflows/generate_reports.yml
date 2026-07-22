@@ -53,8 +53,7 @@ jobs:
     # ── 5. Start Local Web Server ─────────────────────────────────────────
     - name: Start Local Web Server
       run: |
-        cd web_app/dist
-        python3 -m http.server 8080 &
+        npx --yes serve -s web_app/dist -l 8080 &
         sleep 3
         echo "Web server started at http://localhost:8080"
         curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080 || true
