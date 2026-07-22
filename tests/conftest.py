@@ -56,17 +56,27 @@ def browser_options():
     return options
 
 
+def _create_driver(options):
+    """Helper to create Chrome driver using ChromeDriverManager with fallback."""
+    try:
+        from webdriver_manager.chrome import ChromeDriverManager
+        service = Service(ChromeDriverManager().install())
+        return webdriver.Chrome(service=service, options=options)
+    except Exception:
+        return webdriver.Chrome(options=options)
+
+
 @pytest.fixture(scope="function")
 def driver(browser_options, request):
     """Create a fresh Chrome WebDriver instance for each test."""
-    chrome_driver = webdriver.Chrome(options=browser_options)
+    chrome_driver = _create_driver(browser_options)
     chrome_driver.implicitly_wait(IMPLICIT_WAIT)
     chrome_driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
 
     yield chrome_driver
 
     # Take screenshot on failure
-    if request.node.rep_call and request.node.rep_call.failed:
+    if hasattr(request.node, "rep_call") and request.node.rep_call.failed:
         _take_screenshot(chrome_driver, request.node.name)
 
     chrome_driver.quit()
@@ -81,7 +91,7 @@ def driver_mobile(browser_options):
             mobile_options.add_argument(arg)
     mobile_options.add_argument("--window-size=375,812")
 
-    chrome_driver = webdriver.Chrome(options=mobile_options)
+    chrome_driver = _create_driver(mobile_options)
     chrome_driver.implicitly_wait(IMPLICIT_WAIT)
     chrome_driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
 
@@ -98,7 +108,7 @@ def driver_tablet(browser_options):
             tablet_options.add_argument(arg)
     tablet_options.add_argument("--window-size=768,1024")
 
-    chrome_driver = webdriver.Chrome(options=tablet_options)
+    chrome_driver = _create_driver(tablet_options)
     chrome_driver.implicitly_wait(IMPLICIT_WAIT)
     chrome_driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
 

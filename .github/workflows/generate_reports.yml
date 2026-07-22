@@ -24,12 +24,10 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
-        cache: 'npm'
-        cache-dependency-path: web_app/package-lock.json
 
     - name: Install Web App Dependencies
       working-directory: web_app
-      run: npm ci
+      run: npm install
 
     - name: Build Web App (Vite)
       working-directory: web_app
@@ -43,37 +41,28 @@ jobs:
 
     - name: Install Test Dependencies
       run: |
-        pip install --upgrade pip
+        python -m pip install --upgrade pip
         pip install -r tests/requirements.txt
 
-    # ── 4. Set up Chrome ──────────────────────────────────────────────────
-    - name: Set up Chrome
-      uses: browser-actions/setup-chrome@v1
-      with:
-        chrome-version: stable
-
-    - name: Set up ChromeDriver
-      uses: nanasess/setup-chromedriver@v2
-
-    - name: Verify Chrome Installation
+    # ── 4. Set up Google Chrome ────────────────────────────────────────────
+    - name: Install Google Chrome
       run: |
-        google-chrome --version || chrome --version || true
-        chromedriver --version || true
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable || true
 
     # ── 5. Start Local Web Server ─────────────────────────────────────────
     - name: Start Local Web Server
       run: |
         cd web_app/dist
-        python -m http.server 8080 &
+        python3 -m http.server 8080 &
         sleep 3
         echo "Web server started at http://localhost:8080"
-        curl -s -o /dev/null -w "%{http_code}" http://localhost:8080 || true
+        curl -s -o /dev/null -w "%{http_code}\n" http://localhost:8080 || true
 
     # ── 6. Run Selenium E2E Tests ─────────────────────────────────────────
     - name: Run E2E Tests
       env:
         TEST_BASE_URL: "http://localhost:8080"
-        DISPLAY: ":99"
       run: |
         cd tests
         python -m pytest \
@@ -81,9 +70,7 @@ jobs:
           --json-report-file=results.json \
           --json-report-indent=2 \
           -v \
-          --tb=short \
-          --timeout=30 \
-          -x || true
+          --tb=short || true
         echo "Tests completed. Generating report..."
 
     # ── 7. Generate Excel Report ──────────────────────────────────────────
@@ -116,17 +103,7 @@ jobs:
         path: tests/results.json
         retention-days: 30
 
-    # ── 10. Upload Screenshots (if any failures) ─────────────────────────
-    - name: Upload Failure Screenshots
-      if: failure()
-      uses: actions/upload-artifact@v4
-      with:
-        name: Failure-Screenshots
-        path: tests/screenshots/
-        retention-days: 14
-        if-no-files-found: ignore
-
-    # ── 11. Test Summary ──────────────────────────────────────────────────
+    # ── 10. Print Summary ─────────────────────────────────────────────────
     - name: Print Test Summary
       if: always()
       run: |
@@ -134,7 +111,7 @@ jobs:
         echo "  E2E Test Run Complete"
         echo "====================================="
         if [ -f tests/results.json ]; then
-          python -c "
+          python3 -c "
         import json
         with open('tests/results.json') as f:
             data = json.load(f)
@@ -149,10 +126,6 @@ jobs:
         print(f'  Failed:  {failed}  ❌')
         print(f'  Skipped: {skipped}  ⏭️')
         print(f'  Duration: {duration:.2f}s')
-        print(f'  Pass Rate: {passed/max(total,1)*100:.1f}%')
         "
         fi
-        echo "====================================="
-        echo "  Download the .xlsx report from"
-        echo "  Actions > Artifacts tab"
         echo "====================================="
