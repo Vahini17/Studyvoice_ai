@@ -110,14 +110,15 @@ SEVERITY_MAP = {
 
 def extract_test_id(nodeid):
     """Extract test case ID from the test function's docstring or generate from name."""
-    # Try to find TC_XXX_NNN pattern in the test name
-    parts = nodeid.split("::")[-1]  # Get test function name
+    if isinstance(nodeid, dict):
+        nodeid = nodeid.get("nodeid", "")
+    parts = nodeid.split("::")[-1] if isinstance(nodeid, str) and "::" in nodeid else str(nodeid)
     # Remove 'test_' prefix and convert to ID format
     name = parts.replace("test_", "").upper()
 
     # Map test file to prefix
     for file_key, _ in CATEGORY_MAP.items():
-        if file_key in nodeid:
+        if file_key in str(nodeid):
             prefix_map = {
                 "test_login": "TC_LOGIN",
                 "test_signup": "TC_SIGNUP",
@@ -463,13 +464,13 @@ def generate_report(results_file=RESULTS_FILE, output_dir=OUTPUT_DIR):
 
     wb.save(filepath)
     print(f"\n{'='*60}")
-    print(f"  ✅ E2E Test Report Generated Successfully!")
-    print(f"  📄 File: {filepath}")
-    print(f"  📊 Total Tests: {len(tests)}")
-    print(f"  ✅ Passed: {summary.get('passed', 0)}")
-    print(f"  ❌ Failed: {summary.get('failed', 0)}")
-    print(f"  ⏭️  Skipped: {summary.get('skipped', 0)}")
-    print(f"  ⏱️  Duration: {duration:.2f}s")
+    print(f"  [SUCCESS] E2E Test Report Generated Successfully!")
+    print(f"  [FILE]: {filepath}")
+    print(f"  [TOTAL TESTS]: {len(tests)}")
+    print(f"  [PASSED]: {summary.get('passed', 0)}")
+    print(f"  [FAILED]: {summary.get('failed', 0)}")
+    print(f"  [SKIPPED]: {summary.get('skipped', 0)}")
+    print(f"  [DURATION]: {duration:.2f}s")
     print(f"{'='*60}\n")
 
     return filepath
