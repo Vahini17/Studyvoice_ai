@@ -1,42 +1,158 @@
-name: Generate Project Excel Reports
+name: E2E Selenium Tests & Excel Report
 
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  generate-reports:
+  e2e-test-and-report:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
+    # ── 1. Checkout Repository ────────────────────────────────────────────
     - name: Checkout Repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    - name: Generate Reports
+    # ── 2. Set up Node.js & Build Web App ─────────────────────────────────
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: web_app/package-lock.json
+
+    - name: Install Web App Dependencies
+      working-directory: web_app
+      run: npm ci
+
+    - name: Build Web App (Vite)
+      working-directory: web_app
+      run: npm run build
+
+    # ── 3. Set up Python ──────────────────────────────────────────────────
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install Test Dependencies
       run: |
-        echo "Generating Project Files Report..."
-        echo "RelativePath,Name,Size(Bytes),Extension" > project_files.csv
-        find . -type f -not -path '*/.*' -not -path './node_modules/*' -not -path './build/*' -not -path './.dart_tool/*' -not -path './web_app/node_modules/*' | while read -r file; do
-          relpath="${file#./}"
-          filename=$(basename "$file")
-          size=$(stat -c%s "$file")
-          ext="${filename##*.}"
-          if [ "$ext" = "$filename" ]; then
-            ext=""
-          fi
-          echo "\"$relpath\",\"$filename\",$size,\"$ext\"" >> project_files.csv
-        done
+        pip install --upgrade pip
+        pip install -r tests/requirements.txt
 
-        echo "Generating Project Commits Report..."
-        git log --pretty=format:'"%h","%an","%ad","%s"' > project_commits.csv
+    # ── 4. Set up Chrome ──────────────────────────────────────────────────
+    - name: Set up Chrome
+      uses: browser-actions/setup-chrome@v1
+      with:
+        chrome-version: stable
 
-    - name: Upload Reports as Artifacts
+    - name: Set up ChromeDriver
+      uses: nanasess/setup-chromedriver@v2
+
+    - name: Verify Chrome Installation
+      run: |
+        google-chrome --version || chrome --version || true
+        chromedriver --version || true
+
+    # ── 5. Start Local Web Server ─────────────────────────────────────────
+    - name: Start Local Web Server
+      run: |
+        cd web_app/dist
+        python -m http.server 8080 &
+        sleep 3
+        echo "Web server started at http://localhost:8080"
+        curl -s -o /dev/null -w "%{http_code}" http://localhost:8080 || true
+
+    # ── 6. Run Selenium E2E Tests ─────────────────────────────────────────
+    - name: Run E2E Tests
+      env:
+        TEST_BASE_URL: "http://localhost:8080"
+        DISPLAY: ":99"
+      run: |
+        cd tests
+        python -m pytest \
+          --json-report \
+          --json-report-file=results.json \
+          --json-report-indent=2 \
+          -v \
+          --tb=short \
+          --timeout=30 \
+          -x || true
+        echo "Tests completed. Generating report..."
+
+    # ── 7. Generate Excel Report ──────────────────────────────────────────
+    - name: Generate .xlsx Report
+      if: always()
+      env:
+        PYTEST_RESULTS_FILE: "tests/results.json"
+        REPORT_OUTPUT_DIR: "test-reports"
+      run: |
+        cd tests
+        python generate_report.py results.json ../test-reports
+        echo "Report generated successfully!"
+        ls -la ../test-reports/
+
+    # ── 8. Upload Test Report as Artifact ─────────────────────────────────
+    - name: Upload Test Report (.xlsx)
+      if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: Project-Excel-Reports
-        path: |
-          project_files.csv
-          project_commits.csv
+        name: E2E-Test-Report-StudyVoice
+        path: test-reports/*.xlsx
+        retention-days: 30
+
+    # ── 9. Upload Test Results JSON ───────────────────────────────────────
+    - name: Upload Test Results JSON
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: Test-Results-JSON
+        path: tests/results.json
+        retention-days: 30
+
+    # ── 10. Upload Screenshots (if any failures) ─────────────────────────
+    - name: Upload Failure Screenshots
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: Failure-Screenshots
+        path: tests/screenshots/
+        retention-days: 14
+        if-no-files-found: ignore
+
+    # ── 11. Test Summary ──────────────────────────────────────────────────
+    - name: Print Test Summary
+      if: always()
+      run: |
+        echo "====================================="
+        echo "  E2E Test Run Complete"
+        echo "====================================="
+        if [ -f tests/results.json ]; then
+          python -c "
+        import json
+        with open('tests/results.json') as f:
+            data = json.load(f)
+        summary = data.get('summary', {})
+        total = summary.get('total', 0)
+        passed = summary.get('passed', 0)
+        failed = summary.get('failed', 0)
+        skipped = summary.get('skipped', 0)
+        duration = data.get('duration', 0)
+        print(f'  Total:   {total}')
+        print(f'  Passed:  {passed}  ✅')
+        print(f'  Failed:  {failed}  ❌')
+        print(f'  Skipped: {skipped}  ⏭️')
+        print(f'  Duration: {duration:.2f}s')
+        print(f'  Pass Rate: {passed/max(total,1)*100:.1f}%')
+        "
+        fi
+        echo "====================================="
+        echo "  Download the .xlsx report from"
+        echo "  Actions > Artifacts tab"
+        echo "====================================="
