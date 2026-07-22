@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373669058378",
+    "project_id": "studyvoice-97608",
+    "storage_bucket": "studyvoice-97608.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373669058378:android:e14fac4fb77721ef48d3b3",
+        "android_client_info": {
+          "package_name": "com.study.voice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0FoXwuXGT8xhg5h6kly-BDHWNq-Iy-tg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
