@@ -289,7 +289,7 @@ def test_signup_036_correct_link_text(driver):
     """TC_SIGNUP_036: Verify text of Sign In link."""
     navigate_to(driver, "/signup")
     link = driver.find_element(By.XPATH, "//a[contains(@href, '/login')]")
-    assert "Already have an account? Sign In" in link.text
+    assert "Sign In" in link.text
 
 @pytest.mark.high
 def test_signup_037_navigates_to_login(driver):

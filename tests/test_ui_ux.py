@@ -37,8 +37,10 @@ def test_signup_mobile_layout(driver_mobile):
         pass
 
 @pytest.mark.medium
+@pytest.mark.medium
 def test_home_mobile_layout(driver_mobile):
     """TC_UI_004: Home page mobile layout"""
+    navigate_to(driver_mobile, "/login")
     inject_mock_auth(driver_mobile)
     navigate_to(driver_mobile, "/home")
     assert element_exists(driver_mobile, By.TAG_NAME, "main") or element_exists(driver_mobile, By.CSS_SELECTOR, "div")
@@ -46,6 +48,7 @@ def test_home_mobile_layout(driver_mobile):
 @pytest.mark.medium
 def test_card_stacking_mobile(driver_mobile):
     """TC_UI_005: Card stacking on mobile"""
+    navigate_to(driver_mobile, "/login")
     inject_mock_auth(driver_mobile)
     navigate_to(driver_mobile, "/home")
     # Verify elements are present on mobile
@@ -64,6 +67,7 @@ def test_font_sizes_adjust_mobile(driver_mobile):
 @pytest.mark.medium
 def test_home_max_width(driver):
     """TC_UI_007: Home page max-width 600px"""
+    navigate_to(driver, "/login")
     inject_mock_auth(driver)
     navigate_to(driver, "/home")
     # Max width check

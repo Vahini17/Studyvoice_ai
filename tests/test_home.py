@@ -3,12 +3,9 @@ from conftest import *
 from selenium.webdriver.common.by import By
 
 def setup_home_page(driver):
-    navigate_to(driver, '/')
-    # Wait for app to load, it may redirect to login
-    wait_seconds(2)
-    # If we're on login, navigate to /home directly
+    navigate_to(driver, '/login')
+    inject_mock_auth(driver)
     navigate_to(driver, '/home')
-    wait_seconds(1)
 
 @pytest.mark.critical
 def test_TC_HOME_001_page_loads(driver):

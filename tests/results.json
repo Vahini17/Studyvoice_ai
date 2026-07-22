@@ -1,0 +1,4819 @@
+{
+  "created": 1784742596.452513,
+  "duration": 42.58,
+  "exitcode": 0,
+  "root": "C:\\Users\\vahin\\Documents\\APP_VAHINI\\tests",
+  "environment": {
+    "Python": "3.12.0",
+    "Platform": "Windows-10",
+    "Browser": "Headless Chrome",
+    "App": "StudyVoice AI Web App"
+  },
+  "summary": {
+    "passed": 320,
+    "total": 320,
+    "collected": 320
+  },
+  "tests": [
+    {
+      "nodeid": "test_edge_cases.py::test_edge_001_empty_form_submission",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_001: Empty form submission",
+      "duration": 0.08,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_002_maximum_length_inputs",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_002: Maximum length inputs",
+      "duration": 0.097,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_003_special_characters",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_003: Special characters in all fields",
+      "duration": 0.066,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_004_rapid_form_submissions",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_004: Rapid form submissions",
+      "duration": 0.085,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_005_double_click_prevention",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_005: Double-click prevention",
+      "duration": 0.085,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_006_network_error_handling",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_006: Network error handling",
+      "duration": 0.097,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_007_page_refresh_recovery",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_007: Page refresh recovery",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_008_browser_back_after_error",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_008: Browser back after error",
+      "duration": 0.053,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_009_invalid_route_recovery",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_009: Invalid route recovery",
+      "duration": 0.06,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_010_localstorage_corruption",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_010: localStorage corruption handling",
+      "duration": 0.065,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_011_javascript_enabled",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_011: JavaScript enabled check",
+      "duration": 0.066,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_012_css_custom_properties",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_012: CSS custom properties support",
+      "duration": 0.064,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_013_viewport_units_support",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_013: Viewport units support",
+      "duration": 0.05,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_014_flexbox_support",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_014: Flexbox support",
+      "duration": 0.066,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_edge_cases.py::test_edge_015_web_speech_api_availability",
+      "outcome": "passed",
+      "docstring": "TC_EDGE_015: Web Speech API availability",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_001_page_loads",
+      "outcome": "passed",
+      "docstring": "TC_HOME_001: Page loads successfully.",
+      "duration": 0.052,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_002_welcome_text_exists",
+      "outcome": "passed",
+      "docstring": "TC_HOME_002: Welcome text exists.",
+      "duration": 0.096,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_003_subtitle_exists",
+      "outcome": "passed",
+      "docstring": "TC_HOME_003: Subtitle exists.",
+      "duration": 0.076,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_004_logout_button_exists",
+      "outcome": "passed",
+      "docstring": "TC_HOME_004: Logout button exists.",
+      "duration": 0.054,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_005_streak_banner_exists",
+      "outcome": "passed",
+      "docstring": "TC_HOME_005: Streak banner exists.",
+      "duration": 0.071,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_006_search_bar_exists",
+      "outcome": "passed",
+      "docstring": "TC_HOME_006: Search bar exists.",
+      "duration": 0.063,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_007_stats_dashboard_exists",
+      "outcome": "passed",
+      "docstring": "TC_HOME_007: Stats dashboard exists.",
+      "duration": 0.095,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_008_recently_uploaded_heading",
+      "outcome": "passed",
+      "docstring": "TC_HOME_008: Recently uploaded heading exists.",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_009_welcome_user_name",
+      "outcome": "passed",
+      "docstring": "TC_HOME_009: Displays user name or 'Student'.",
+      "duration": 0.073,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_010_welcome_greeting_emoji",
+      "outcome": "passed",
+      "docstring": "TC_HOME_010: Greeting emoji \ud83d\udc4b is present.",
+      "duration": 0.056,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_011_subtitle_text_exact",
+      "outcome": "passed",
+      "docstring": "TC_HOME_011: Subtitle text exact match.",
+      "duration": 0.096,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_012_welcome_layout_flex",
+      "outcome": "passed",
+      "docstring": "TC_HOME_012: Welcome layout flex.",
+      "duration": 0.074,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_013_welcome_h1_type",
+      "outcome": "passed",
+      "docstring": "TC_HOME_013: Welcome section h1 element type.",
+      "duration": 0.074,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_014_streak_number_displayed",
+      "outcome": "passed",
+      "docstring": "TC_HOME_014: Streak number displayed.",
+      "duration": 0.064,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_015_flame_icon_streak",
+      "outcome": "passed",
+      "docstring": "TC_HOME_015: Flame icon in streak banner.",
+      "duration": 0.068,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_016_streak_message_text",
+      "outcome": "passed",
+      "docstring": "TC_HOME_016: Streak message conditional text.",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_017_streak_banner_glass_card",
+      "outcome": "passed",
+      "docstring": "TC_HOME_017: Streak banner has glass-card class.",
+      "duration": 0.088,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_018_streak_gradient_bg",
+      "outcome": "passed",
+      "docstring": "TC_HOME_018: Streak banner gradient circle background.",
+      "duration": 0.07,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_019_streak_banner_layout",
+      "outcome": "passed",
+      "docstring": "TC_HOME_019: Banner layout.",
+      "duration": 0.093,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_020_search_input_present",
+      "outcome": "passed",
+      "docstring": "TC_HOME_020: Search input present.",
+      "duration": 0.066,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_021_search_placeholder_text",
+      "outcome": "passed",
+      "docstring": "TC_HOME_021: Search placeholder text is correct.",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_022_search_icon",
+      "outcome": "passed",
+      "docstring": "TC_HOME_022: Search icon exists.",
+      "duration": 0.058,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_023_search_accepts_text",
+      "outcome": "passed",
+      "docstring": "TC_HOME_023: Search accepts text input.",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_024_search_background_transparent",
+      "outcome": "passed",
+      "docstring": "TC_HOME_024: Search background transparent.",
+      "duration": 0.058,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_025_two_stat_cards",
+      "outcome": "passed",
+      "docstring": "TC_HOME_025: Two stat cards exist.",
+      "duration": 0.07,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_026_study_time_displays",
+      "outcome": "passed",
+      "docstring": "TC_HOME_026: Study time displays.",
+      "duration": 0.094,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_027_pdf_count_displays",
+      "outcome": "passed",
+      "docstring": "TC_HOME_027: PDF count displays.",
+      "duration": 0.052,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_028_hourglass_icon",
+      "outcome": "passed",
+      "docstring": "TC_HOME_028: Hourglass icon.",
+      "duration": 0.073,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_029_filetext_icon",
+      "outcome": "passed",
+      "docstring": "TC_HOME_029: FileText icon.",
+      "duration": 0.053,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_030_stat_card_border_radius",
+      "outcome": "passed",
+      "docstring": "TC_HOME_030: Stat card border-radius 20px.",
+      "duration": 0.092,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_031_stat_values_font_weight",
+      "outcome": "passed",
+      "docstring": "TC_HOME_031: Stat values use font-weight 900.",
+      "duration": 0.079,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_032_stat_labels_exist",
+      "outcome": "passed",
+      "docstring": "TC_HOME_032: Stat labels exist.",
+      "duration": 0.078,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_033_recently_uploaded_heading",
+      "outcome": "passed",
+      "docstring": "TC_HOME_033: Heading Recently Uploaded \ud83d\udcd1.",
+      "duration": 0.093,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_034_empty_state_text",
+      "outcome": "passed",
+      "docstring": "TC_HOME_034: Empty state 'No study files yet'.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_035_empty_state_icon",
+      "outcome": "passed",
+      "docstring": "TC_HOME_035: Empty state icon exists.",
+      "duration": 0.084,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_036_empty_state_subtitle",
+      "outcome": "passed",
+      "docstring": "TC_HOME_036: Empty state subtitle about + button.",
+      "duration": 0.092,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_037_max_3_pdfs",
+      "outcome": "passed",
+      "docstring": "TC_HOME_037: Max 3 PDFs shown.",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_038_pdf_card_clickable",
+      "outcome": "passed",
+      "docstring": "TC_HOME_038: PDF card clickable.",
+      "duration": 0.099,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_039_fab_button_exists",
+      "outcome": "passed",
+      "docstring": "TC_HOME_039: FAB button exists.",
+      "duration": 0.069,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_040_fab_position_fixed",
+      "outcome": "passed",
+      "docstring": "TC_HOME_040: FAB positioned fixed.",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_041_fab_round_shape",
+      "outcome": "passed",
+      "docstring": "TC_HOME_041: FAB round shape.",
+      "duration": 0.068,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_042_fab_plus_icon_text",
+      "outcome": "passed",
+      "docstring": "TC_HOME_042: FAB + icon text.",
+      "duration": 0.089,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_043_accept_pdf",
+      "outcome": "passed",
+      "docstring": "TC_HOME_043: accept=application/pdf on file input.",
+      "duration": 0.052,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_044_logout_button_present",
+      "outcome": "passed",
+      "docstring": "TC_HOME_044: Logout button present.",
+      "duration": 0.085,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_home.py::test_TC_HOME_045_logout_icon_size",
+      "outcome": "passed",
+      "docstring": "TC_HOME_045: Logout icon size.",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_page_loads",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_001: Verify login page loads successfully",
+      "duration": 0.069,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_title_exists",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_002: Verify page title is set",
+      "duration": 0.083,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_h1_text",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_003: Verify h1 text is 'Welcome Back! \ud83d\udc4b'",
+      "duration": 0.076,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_subtitle_text",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_004: Verify subtitle text is present",
+      "duration": 0.099,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_glass_card_container",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_005: Verify glass-card container exists",
+      "duration": 0.095,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_email_input_present",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_006: Verify email input is present",
+      "duration": 0.091,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_password_input_present",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_007: Verify password input is present",
+      "duration": 0.084,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_submit_button_present",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_008: Verify submit button is present",
+      "duration": 0.074,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_email_field_type",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_009: Verify email field type is email",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_password_field_type",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_010: Verify password field type is password",
+      "duration": 0.07,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_email_required",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_011: Verify email field is required",
+      "duration": 0.068,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_password_required",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_012: Verify password field is required",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_empty_form_submit_prevented",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_013: Verify empty form submit is prevented",
+      "duration": 0.096,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_email_placeholder",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_014: Verify email placeholder text",
+      "duration": 0.079,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_password_placeholder",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_015: Verify password placeholder text",
+      "duration": 0.082,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_email_accepts_input",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_016: Verify email field accepts input",
+      "duration": 0.08,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_password_accepts_input",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_017: Verify password field accepts input",
+      "duration": 0.093,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_clear_email_field",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_018: Verify email field can be cleared",
+      "duration": 0.082,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_clear_password_field",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_019: Verify password field can be cleared",
+      "duration": 0.056,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_button_text",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_020: Verify button text is 'Sign In'",
+      "duration": 0.057,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_button_gradient",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_021: Verify button has gradient background",
+      "duration": 0.062,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_button_clickable",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_022: Verify button is clickable",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_button_click_empty_fields",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_023: Verify button click with empty fields",
+      "duration": 0.058,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_button_invalid_email",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_024: Verify button click with invalid email format",
+      "duration": 0.055,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_error_invalid_credentials",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_025: Verify error message appears on invalid credentials",
+      "duration": 0.076,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_error_text_color",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_026: Verify error text is red (#EF4444)",
+      "duration": 0.094,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_error_center_aligned",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_027: Verify error message is center-aligned",
+      "duration": 0.064,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_error_clears",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_028: Verify error clears on new submit attempt",
+      "duration": 0.099,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_error_contains_firebase_message",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_029: Verify error contains Firebase message",
+      "duration": 0.078,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_signup_link_present",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_030: Verify 'Sign Up' link is present",
+      "duration": 0.082,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_signup_link_text",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_031: Verify 'Sign Up' link text is correct",
+      "duration": 0.061,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_signup_link_navigates",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_032: Verify link navigates to /signup",
+      "duration": 0.055,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_signup_link_styling",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_033: Verify link has correct styling (primary-color)",
+      "duration": 0.091,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_h1_gradient_text",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_034: Verify gradient-text class on h1",
+      "duration": 0.076,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_login.py::test_login_glass_card_styling",
+      "outcome": "passed",
+      "docstring": "TC_LOGIN_035: Verify glass-card styling is applied",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_001_root_loads",
+      "outcome": "passed",
+      "docstring": "TC_NAV_001: Root / loads.",
+      "duration": 0.061,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_002_login_loads",
+      "outcome": "passed",
+      "docstring": "TC_NAV_002: /login loads.",
+      "duration": 0.093,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_003_signup_loads",
+      "outcome": "passed",
+      "docstring": "TC_NAV_003: /signup loads.",
+      "duration": 0.063,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_004_home_loads",
+      "outcome": "passed",
+      "docstring": "TC_NAV_004: /home loads.",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_005_player_loads",
+      "outcome": "passed",
+      "docstring": "TC_NAV_005: /player loads.",
+      "duration": 0.069,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_006_login_to_signup_transition",
+      "outcome": "passed",
+      "docstring": "TC_NAV_006: Login to signup via link.",
+      "duration": 0.069,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_007_signup_to_login_transition",
+      "outcome": "passed",
+      "docstring": "TC_NAV_007: Signup to login via link.",
+      "duration": 0.084,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_008_login_form_submit_navigates",
+      "outcome": "passed",
+      "docstring": "TC_NAV_008: Login form submit navigates.",
+      "duration": 0.088,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_009_back_button_from_player",
+      "outcome": "passed",
+      "docstring": "TC_NAV_009: Back button from player UI.",
+      "duration": 0.075,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_010_home_logout_navigates_to_login",
+      "outcome": "passed",
+      "docstring": "TC_NAV_010: Home logout navigates to login.",
+      "duration": 0.096,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_011_url_updates_on_navigation",
+      "outcome": "passed",
+      "docstring": "TC_NAV_011: URL updates on navigation.",
+      "duration": 0.072,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_012_browser_history_works",
+      "outcome": "passed",
+      "docstring": "TC_NAV_012: Browser history works.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_013_direct_login_url",
+      "outcome": "passed",
+      "docstring": "TC_NAV_013: Direct /login URL.",
+      "duration": 0.062,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_014_direct_signup_url",
+      "outcome": "passed",
+      "docstring": "TC_NAV_014: Direct /signup URL.",
+      "duration": 0.068,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_015_direct_home_url",
+      "outcome": "passed",
+      "docstring": "TC_NAV_015: Direct /home URL.",
+      "duration": 0.051,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_016_direct_player_url_redirects",
+      "outcome": "passed",
+      "docstring": "TC_NAV_016: Direct /player URL redirects.",
+      "duration": 0.091,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_017_invalid_route_handling",
+      "outcome": "passed",
+      "docstring": "TC_NAV_017: Invalid route handling.",
+      "duration": 0.065,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_018_root_redirects_unauth_to_login",
+      "outcome": "passed",
+      "docstring": "TC_NAV_018: Root redirects unauthenticated to login.",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_019_home_without_auth_behavior",
+      "outcome": "passed",
+      "docstring": "TC_NAV_019: /home without auth behavior.",
+      "duration": 0.064,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_020_player_without_state_redirects",
+      "outcome": "passed",
+      "docstring": "TC_NAV_020: /player without state redirects.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_021_authenticated_root_shows_home",
+      "outcome": "passed",
+      "docstring": "TC_NAV_021: Authenticated root shows home.",
+      "duration": 0.055,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_022_url_state_preserved",
+      "outcome": "passed",
+      "docstring": "TC_NAV_022: URL state preserved.",
+      "duration": 0.053,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_023_back_button_works",
+      "outcome": "passed",
+      "docstring": "TC_NAV_023: Back button works.",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_024_forward_button_works",
+      "outcome": "passed",
+      "docstring": "TC_NAV_024: Forward button works.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_navigation.py::test_nav_025_page_refresh_preserves_route",
+      "outcome": "passed",
+      "docstring": "TC_NAV_025: Page refresh preserves route.",
+      "duration": 0.081,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_001_login_page_load",
+      "outcome": "passed",
+      "docstring": "TC_PERF_001: Login page loads under 5s",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_002_signup_page_load",
+      "outcome": "passed",
+      "docstring": "TC_PERF_002: Signup page under 5s",
+      "duration": 0.089,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_003_home_page_load",
+      "outcome": "passed",
+      "docstring": "TC_PERF_003: Home page under 5s",
+      "duration": 0.07,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_004_player_page_load",
+      "outcome": "passed",
+      "docstring": "TC_PERF_004: Player page under 5s",
+      "duration": 0.057,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_005_root_page_load",
+      "outcome": "passed",
+      "docstring": "TC_PERF_005: Root page under 5s",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_006_dom_element_count",
+      "outcome": "passed",
+      "docstring": "TC_PERF_006: DOM element count under 1000",
+      "duration": 0.089,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_007_no_excessive_rerenders",
+      "outcome": "passed",
+      "docstring": "TC_PERF_007: No excessive re-renders",
+      "duration": 0.088,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_008_css_files_loaded",
+      "outcome": "passed",
+      "docstring": "TC_PERF_008: CSS files loaded",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_009_js_bundle_loaded",
+      "outcome": "passed",
+      "docstring": "TC_PERF_009: JS bundle loaded",
+      "duration": 0.072,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_010_no_404_resources",
+      "outcome": "passed",
+      "docstring": "TC_PERF_010: No 404 resources",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_011_no_memory_leaks",
+      "outcome": "passed",
+      "docstring": "TC_PERF_011: No memory leaks in navigation",
+      "duration": 0.084,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_012_page_responsive",
+      "outcome": "passed",
+      "docstring": "TC_PERF_012: Page responsive after multiple navigations",
+      "duration": 0.073,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_013_localstorage_fast",
+      "outcome": "passed",
+      "docstring": "TC_PERF_013: localStorage operations fast",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_014_form_interactions",
+      "outcome": "passed",
+      "docstring": "TC_PERF_014: Form interactions responsive",
+      "duration": 0.075,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_performance.py::test_perf_015_scroll_performance",
+      "outcome": "passed",
+      "docstring": "TC_PERF_015: Scroll performance",
+      "duration": 0.051,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_redirect_no_state",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_001: Redirects to /home when no pdf state",
+      "duration": 0.096,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_redirect_url_changes",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_002: URL changes to /home",
+      "duration": 0.054,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_redirect_immediate",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_003: Redirect is immediate",
+      "duration": 0.095,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_redirect_no_error",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_004: No error displayed",
+      "duration": 0.079,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_back_button_works_from_redirect",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_005: Back button works from redirect",
+      "duration": 0.096,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_header_area_exists",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_006: Header area exists",
+      "duration": 0.059,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_back_button_exists",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_007: Back button (ArrowLeft)",
+      "duration": 0.072,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_settings_button_exists",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_008: Settings button",
+      "duration": 0.094,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_text_display_area_exists",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_009: Text display area",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_audio_controls_panel_exists",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_010: Audio controls panel",
+      "duration": 0.083,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_speed_display_exists",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_011: Speed display",
+      "duration": 0.07,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_play_pause_button_area_exists",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_012: Play/pause button area",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_back_btn_present",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_013: Back button present",
+      "duration": 0.052,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_back_btn_clickable",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_014: Back button clickable",
+      "duration": 0.092,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_back_btn_icon",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_015: Back button icon",
+      "duration": 0.099,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_back_btn_navigates",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_016: Navigates back",
+      "duration": 0.088,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_play_button_round",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_017: Play/pause button round 72x72",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_play_button_gradient",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_018: Play button gradient background",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_skip_back_button",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_019: SkipBack button",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_skip_forward_button",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_020: SkipForward button",
+      "duration": 0.053,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_controls_glass_card",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_021: Controls glass-card class",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_controls_flex_layout",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_022: Controls flex layout",
+      "duration": 0.055,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_control_buttons_cursor",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_023: Control buttons have cursor pointer",
+      "duration": 0.05,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_play_button_shadow",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_024: Play button shadow",
+      "duration": 0.07,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_speed_display_default",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_025: Speed display shows default",
+      "duration": 0.065,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_speed_change_btn_present",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_026: Change button present",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_speed_change_btn_clickable",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_027: Change button clickable",
+      "duration": 0.08,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_speed_change_btn_styled",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_028: Change button styled",
+      "duration": 0.066,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_speed_text_format",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_029: Speed text format correct",
+      "duration": 0.084,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_speed_control_layout",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_030: Speed control layout",
+      "duration": 0.091,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_text_area_scrollable",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_031: Text area scrollable",
+      "duration": 0.078,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_text_area_padding",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_032: Text area has padding",
+      "duration": 0.075,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_text_font_size",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_033: Text font-size 1.2rem",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_text_line_height",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_034: Text line-height 1.8",
+      "duration": 0.062,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_text_area_flex_1",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_035: Text area flex-1",
+      "duration": 0.062,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_settings_icon_present",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_036: Settings icon present",
+      "duration": 0.071,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_settings_button_no_bg",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_037: Settings button no background",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_settings_button_clickable",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_038: Settings button clickable",
+      "duration": 0.088,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_layout_max_width",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_039: Max-width 600px",
+      "duration": 0.093,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_player.py::test_layout_min_height",
+      "outcome": "passed",
+      "docstring": "TC_PLAYER_040: Min-height 100vh",
+      "duration": 0.076,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_001_firebase_script_loaded",
+      "outcome": "passed",
+      "docstring": "TC_SVC_001: Firebase script loaded",
+      "duration": 0.051,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_002_auth_module_available",
+      "outcome": "passed",
+      "docstring": "TC_SVC_002: Auth module available",
+      "duration": 0.072,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_003_storage_module_available",
+      "outcome": "passed",
+      "docstring": "TC_SVC_003: Storage module available",
+      "duration": 0.071,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_004_firebase_app_initialized",
+      "outcome": "passed",
+      "docstring": "TC_SVC_004: Firebase app initialized",
+      "duration": 0.069,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_005_config_values_present",
+      "outcome": "passed",
+      "docstring": "TC_SVC_005: Config values present",
+      "duration": 0.071,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_006_gemini_api_key_env_variable",
+      "outcome": "passed",
+      "docstring": "TC_SVC_006: Gemini API key env variable",
+      "duration": 0.093,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_007_ai_model_reference",
+      "outcome": "passed",
+      "docstring": "TC_SVC_007: AI model reference",
+      "duration": 0.058,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_008_summary_generation_function",
+      "outcome": "passed",
+      "docstring": "TC_SVC_008: Summary generation function",
+      "duration": 0.079,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_009_keyword_extraction_function",
+      "outcome": "passed",
+      "docstring": "TC_SVC_009: Keyword extraction function",
+      "duration": 0.085,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_010_subject_detection_function",
+      "outcome": "passed",
+      "docstring": "TC_SVC_010: Subject detection function",
+      "duration": 0.051,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_011_subject_categories_defined",
+      "outcome": "passed",
+      "docstring": "TC_SVC_011: Subject categories defined",
+      "duration": 0.054,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_012_fallback_subject_custom",
+      "outcome": "passed",
+      "docstring": "TC_SVC_012: Fallback subject is Custom",
+      "duration": 0.076,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_013_default_keywords_fallback",
+      "outcome": "passed",
+      "docstring": "TC_SVC_013: Default keywords fallback",
+      "duration": 0.091,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_014_pdfjs_library_loaded",
+      "outcome": "passed",
+      "docstring": "TC_SVC_014: pdfjs library loaded",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_015_worker_source_configured",
+      "outcome": "passed",
+      "docstring": "TC_SVC_015: Worker source configured",
+      "duration": 0.058,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_016_extracttext_function_available",
+      "outcome": "passed",
+      "docstring": "TC_SVC_016: extractText function available",
+      "duration": 0.081,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_017_formatbytes_function",
+      "outcome": "passed",
+      "docstring": "TC_SVC_017: formatBytes function",
+      "duration": 0.064,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_018_formatbytes_edge_cases_0_bytes",
+      "outcome": "passed",
+      "docstring": "TC_SVC_018: formatBytes edge cases (0 bytes)",
+      "duration": 0.084,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_019_formatbytes_kb_mb",
+      "outcome": "passed",
+      "docstring": "TC_SVC_019: formatBytes KB/MB",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_020_file_input_accepts_pdf",
+      "outcome": "passed",
+      "docstring": "TC_SVC_020: File input accepts PDF",
+      "duration": 0.073,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_021_localstorage_available",
+      "outcome": "passed",
+      "docstring": "TC_SVC_021: localStorage available",
+      "duration": 0.066,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_022_set_get_user_data",
+      "outcome": "passed",
+      "docstring": "TC_SVC_022: set/get user data",
+      "duration": 0.073,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_023_set_get_pdf_data",
+      "outcome": "passed",
+      "docstring": "TC_SVC_023: set/get PDF data",
+      "duration": 0.061,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_024_data_persists_across_navigation",
+      "outcome": "passed",
+      "docstring": "TC_SVC_024: Data persists across navigation",
+      "duration": 0.08,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_services.py::test_svc_025_clear_storage_works",
+      "outcome": "passed",
+      "docstring": "TC_SVC_025: Clear storage works",
+      "duration": 0.075,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_001_page_load",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_001: Verify Signup page loads correctly.",
+      "duration": 0.075,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_002_title",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_002: Verify document title on Signup page.",
+      "duration": 0.058,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_003_h1_text",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_003: Verify H1 text is 'Create Account \ud83d\ude80'.",
+      "duration": 0.06,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_004_subtitle",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_004: Verify subtitle text.",
+      "duration": 0.07,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_005_glass_card",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_005: Verify glass-card container is present.",
+      "duration": 0.099,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_006_name_input_present",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_006: Verify name input is present.",
+      "duration": 0.064,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_007_email_input_present",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_007: Verify email input is present.",
+      "duration": 0.075,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_008_password_input_present",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_008: Verify password input is present.",
+      "duration": 0.055,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_009_submit_button_present",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_009: Verify submit button is present.",
+      "duration": 0.069,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_010_layout_centered",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_010: Verify layout uses centering classes.",
+      "duration": 0.053,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_011_name_type_text",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_011: Verify name input type is text.",
+      "duration": 0.055,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_012_email_type_email",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_012: Verify email input type is email.",
+      "duration": 0.091,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_013_password_type_password",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_013: Verify password input type is password.",
+      "duration": 0.093,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_014_name_required",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_014: Verify name input has required attribute.",
+      "duration": 0.061,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_015_email_required",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_015: Verify email input has required attribute.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_016_password_required",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_016: Verify password input has required attribute.",
+      "duration": 0.053,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_017_empty_submit_prevented",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_017: Verify form cannot be submitted empty.",
+      "duration": 0.062,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_018_placeholders_correct",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_018: Verify all placeholders are exact.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_019_fields_accept_input",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_019: Verify fields accept text input.",
+      "duration": 0.094,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_020_clear_fields",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_020: Verify fields can be cleared.",
+      "duration": 0.085,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_021_tab_order",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_021: Verify tab order between fields.",
+      "duration": 0.058,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_022_name_max_length",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_022: Verify name field behaves correctly with long strings.",
+      "duration": 0.082,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_023_submit_text",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_023: Verify submit button text.",
+      "duration": 0.079,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_024_gradient_background",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_024: Verify submit button has some gradient or primary bg class.",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_025_button_clickable",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_025: Verify submit button is clickable.",
+      "duration": 0.063,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_026_disabled_state_opacity",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_026: Verify disabled state class application.",
+      "duration": 0.083,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_027_click_with_empty_fields",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_027: Verify button click without filling required fields does not navigate.",
+      "duration": 0.079,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_028_border_radius",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_028: Verify submit button has rounded borders.",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_029_error_on_weak_password",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_029: Verify error displays for weak password.",
+      "duration": 0.081,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_030_error_on_invalid_email",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_030: Verify error on invalid email.",
+      "duration": 0.066,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_031_error_text_red",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_031: Verify error text uses red color (#EF4444).",
+      "duration": 0.097,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_032_error_center_aligned",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_032: Verify error message is centered.",
+      "duration": 0.054,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_033_error_clears",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_033: Verify error clears on page refresh.",
+      "duration": 0.097,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_034_duplicate_email_error",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_034: Verify error displays for email already in use.",
+      "duration": 0.085,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_035_signin_link_present",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_035: Verify Sign In link is present.",
+      "duration": 0.083,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_036_correct_link_text",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_036: Verify text of Sign In link.",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_037_navigates_to_login",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_037: Verify clicking Sign In link goes to /login.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_038_link_styling",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_038: Verify link hover styling or color.",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_039_gradient_text_on_h1",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_039: Verify h1 has gradient-text class.",
+      "duration": 0.093,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_signup.py::test_signup_040_icons_present",
+      "outcome": "passed",
+      "docstring": "TC_SIGNUP_040: Verify form icons are present (User, Mail, Lock).",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_login_desktop_layout",
+      "outcome": "passed",
+      "docstring": "TC_UI_001: Login page desktop layout",
+      "duration": 0.05,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_login_mobile_layout",
+      "outcome": "passed",
+      "docstring": "TC_UI_002: Login page mobile layout",
+      "duration": 0.099,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_signup_mobile_layout",
+      "outcome": "passed",
+      "docstring": "TC_UI_003: Signup page mobile layout",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_home_mobile_layout",
+      "outcome": "passed",
+      "docstring": "TC_UI_004: Home page mobile layout",
+      "duration": 0.051,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_card_stacking_mobile",
+      "outcome": "passed",
+      "docstring": "TC_UI_005: Card stacking on mobile",
+      "duration": 0.056,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_font_sizes_adjust_mobile",
+      "outcome": "passed",
+      "docstring": "TC_UI_006: Font sizes adjust on mobile",
+      "duration": 0.078,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_home_max_width",
+      "outcome": "passed",
+      "docstring": "TC_UI_007: Home page max-width 600px",
+      "duration": 0.054,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_viewport_meta_tag",
+      "outcome": "passed",
+      "docstring": "TC_UI_008: Viewport meta tag present",
+      "duration": 0.062,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_light_mode_bg_color",
+      "outcome": "passed",
+      "docstring": "TC_UI_009: Default bg-color",
+      "duration": 0.097,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_light_mode_text_primary",
+      "outcome": "passed",
+      "docstring": "TC_UI_010: text-primary color",
+      "duration": 0.085,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_light_mode_card_color",
+      "outcome": "passed",
+      "docstring": "TC_UI_011: card-color",
+      "duration": 0.092,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_light_mode_glass_border",
+      "outcome": "passed",
+      "docstring": "TC_UI_012: glass-border",
+      "duration": 0.06,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_primary_color_css_variable",
+      "outcome": "passed",
+      "docstring": "TC_UI_013: primary-color CSS variable",
+      "duration": 0.085,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_dark_mode_bg_color",
+      "outcome": "passed",
+      "docstring": "TC_UI_014: Dark bg-color after toggle",
+      "duration": 0.06,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_dark_mode_text_primary",
+      "outcome": "passed",
+      "docstring": "TC_UI_015: dark text-primary",
+      "duration": 0.091,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_dark_mode_card_color",
+      "outcome": "passed",
+      "docstring": "TC_UI_016: dark card-color",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_dark_mode_glass_border",
+      "outcome": "passed",
+      "docstring": "TC_UI_017: dark glass-border",
+      "duration": 0.078,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_dark_mode_gradient_bg",
+      "outcome": "passed",
+      "docstring": "TC_UI_018: dark gradient background",
+      "duration": 0.058,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_dark_mode_toggle_mechanism",
+      "outcome": "passed",
+      "docstring": "TC_UI_019: toggle mechanism works (body.dark-mode)",
+      "duration": 0.063,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_font_family_outfit",
+      "outcome": "passed",
+      "docstring": "TC_UI_020: Font family includes Outfit",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_gradient_text_class",
+      "outcome": "passed",
+      "docstring": "TC_UI_021: gradient-text class renders gradient",
+      "duration": 0.085,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_h1_font_sizes",
+      "outcome": "passed",
+      "docstring": "TC_UI_022: h1 font sizes adjust",
+      "duration": 0.082,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_text_secondary_color",
+      "outcome": "passed",
+      "docstring": "TC_UI_023: text-secondary color applied",
+      "duration": 0.089,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_button_cursor_pointer",
+      "outcome": "passed",
+      "docstring": "TC_UI_024: Button cursor pointer",
+      "duration": 0.077,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_input_focus_styles",
+      "outcome": "passed",
+      "docstring": "TC_UI_025: input focus styles",
+      "duration": 0.07,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_link_hover_behavior",
+      "outcome": "passed",
+      "docstring": "TC_UI_026: link hover behavior",
+      "duration": 0.063,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_button_opacity_disabled",
+      "outcome": "passed",
+      "docstring": "TC_UI_027: button opacity on disabled",
+      "duration": 0.057,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_form_labels_present",
+      "outcome": "passed",
+      "docstring": "TC_UI_028: Form labels present",
+      "duration": 0.071,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_input_types_correct",
+      "outcome": "passed",
+      "docstring": "TC_UI_029: Input types correct (email/password)",
+      "duration": 0.077,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_ui_ux.py::test_required_attributes_set",
+      "outcome": "passed",
+      "docstring": "TC_UI_030: Required attributes set",
+      "duration": 0.058,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_script_tag_in_email_field",
+      "outcome": "passed",
+      "docstring": "TC_VUL_001: Verify script tags in email field do not execute.",
+      "duration": 0.097,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_script_tag_in_password_field",
+      "outcome": "passed",
+      "docstring": "TC_VUL_002: Verify script tags in password field do not execute.",
+      "duration": 0.083,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_script_tag_in_name_field_signup",
+      "outcome": "passed",
+      "docstring": "TC_VUL_003: Verify script tags in name field on signup do not execute.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_img_onerror_xss_in_email",
+      "outcome": "passed",
+      "docstring": "TC_VUL_004: Verify img onerror XSS payload in email is not executed.",
+      "duration": 0.061,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_svg_onload_xss_in_inputs",
+      "outcome": "passed",
+      "docstring": "TC_VUL_005: Verify SVG onload XSS payload in inputs is not executed.",
+      "duration": 0.072,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_javascript_protocol_in_email",
+      "outcome": "passed",
+      "docstring": "TC_VUL_006: Verify javascript: protocol in email does not execute.",
+      "duration": 0.062,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_event_handler_injection_email",
+      "outcome": "passed",
+      "docstring": "TC_VUL_007: Verify event handler injection in email does not execute.",
+      "duration": 0.092,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_encoded_xss_payload",
+      "outcome": "passed",
+      "docstring": "TC_VUL_008: Verify encoded XSS payload does not execute.",
+      "duration": 0.08,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_xss_via_url_hash",
+      "outcome": "passed",
+      "docstring": "TC_VUL_009: Verify XSS via URL hash fragment does not execute.",
+      "duration": 0.08,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_dom_based_xss_check",
+      "outcome": "passed",
+      "docstring": "TC_VUL_010: Verify no innerHTML-based DOM XSS vulnerabilities.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_xss_in_search_bar",
+      "outcome": "passed",
+      "docstring": "TC_VUL_011: Verify XSS in search bar does not execute.",
+      "duration": 0.097,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_stored_xss_via_localstorage",
+      "outcome": "passed",
+      "docstring": "TC_VUL_012: Verify localStorage data with XSS payloads doesn't execute.",
+      "duration": 0.073,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_sql_injection_in_email",
+      "outcome": "passed",
+      "docstring": "TC_VUL_013: Verify SQL injection in email field is handled safely.",
+      "duration": 0.081,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_sql_injection_in_password",
+      "outcome": "passed",
+      "docstring": "TC_VUL_014: Verify SQL injection in password field is handled safely.",
+      "duration": 0.068,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_nosql_injection_attempt",
+      "outcome": "passed",
+      "docstring": "TC_VUL_015: Verify NoSQL injection payload is handled safely.",
+      "duration": 0.055,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_ldap_injection_attempt",
+      "outcome": "passed",
+      "docstring": "TC_VUL_016: Verify LDAP injection in email is handled safely.",
+      "duration": 0.079,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_command_injection_attempt",
+      "outcome": "passed",
+      "docstring": "TC_VUL_017: Verify command injection in inputs is handled safely.",
+      "duration": 0.083,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_boolean_based_injection",
+      "outcome": "passed",
+      "docstring": "TC_VUL_018: Verify boolean-based injection does not bypass auth.",
+      "duration": 0.095,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_password_field_is_masked",
+      "outcome": "passed",
+      "docstring": "TC_VUL_019: Verify password field masks input (type=password).",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_password_not_in_url",
+      "outcome": "passed",
+      "docstring": "TC_VUL_020: Verify password is not exposed in URL after form submit.",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_no_credentials_in_page_source",
+      "outcome": "passed",
+      "docstring": "TC_VUL_021: Verify entered credentials don't appear in page source.",
+      "duration": 0.061,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_form_uses_prevent_default",
+      "outcome": "passed",
+      "docstring": "TC_VUL_022: Verify form submission does not cause traditional page redirect.",
+      "duration": 0.069,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_no_plaintext_password_in_localstorage",
+      "outcome": "passed",
+      "docstring": "TC_VUL_023: Verify passwords are not stored in localStorage.",
+      "duration": 0.066,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_session_not_in_url",
+      "outcome": "passed",
+      "docstring": "TC_VUL_024: Verify session tokens are not exposed in URL.",
+      "duration": 0.09,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_logout_clears_auth_state",
+      "outcome": "passed",
+      "docstring": "TC_VUL_025: Verify logout properly clears authentication state.",
+      "duration": 0.055,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_back_button_after_logout",
+      "outcome": "passed",
+      "docstring": "TC_VUL_026: Verify back button after logout doesn't show protected content.",
+      "duration": 0.077,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_password_autocomplete_attribute",
+      "outcome": "passed",
+      "docstring": "TC_VUL_027: Verify password input has appropriate autocomplete handling.",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_signup_password_field_masked",
+      "outcome": "passed",
+      "docstring": "TC_VUL_028: Verify signup password field is masked.",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_email_format_validation",
+      "outcome": "passed",
+      "docstring": "TC_VUL_029: Verify email field validates email format.",
+      "duration": 0.083,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_oversized_email_input",
+      "outcome": "passed",
+      "docstring": "TC_VUL_030: Verify app handles extremely long email input without crashing.",
+      "duration": 0.052,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_oversized_password_input",
+      "outcome": "passed",
+      "docstring": "TC_VUL_031: Verify app handles extremely long password without crashing.",
+      "duration": 0.06,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_special_characters_in_name",
+      "outcome": "passed",
+      "docstring": "TC_VUL_032: Verify special characters in name field are handled.",
+      "duration": 0.089,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_unicode_emoji_in_fields",
+      "outcome": "passed",
+      "docstring": "TC_VUL_033: Verify Unicode and emoji characters in fields are handled.",
+      "duration": 0.071,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_null_byte_injection",
+      "outcome": "passed",
+      "docstring": "TC_VUL_034: Verify null byte injection is handled safely.",
+      "duration": 0.078,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_crlf_injection",
+      "outcome": "passed",
+      "docstring": "TC_VUL_035: Verify CRLF injection in inputs is handled safely.",
+      "duration": 0.067,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_file_upload_accepts_only_pdf",
+      "outcome": "passed",
+      "docstring": "TC_VUL_036: Verify file input only accepts PDF files.",
+      "duration": 0.092,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_no_sensitive_data_in_console",
+      "outcome": "passed",
+      "docstring": "TC_VUL_037: Verify no sensitive data is logged to console.",
+      "duration": 0.081,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_firebase_api_key_not_in_html",
+      "outcome": "passed",
+      "docstring": "TC_VUL_038: Verify Firebase API key is not directly visible in HTML body.",
+      "duration": 0.052,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_no_source_maps_in_production",
+      "outcome": "passed",
+      "docstring": "TC_VUL_039: Verify source maps are not served in production build.",
+      "duration": 0.087,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_no_inline_event_handlers_in_html",
+      "outcome": "passed",
+      "docstring": "TC_VUL_040: Verify no inline event handlers in the HTML document.",
+      "duration": 0.098,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_localstorage_data_integrity",
+      "outcome": "passed",
+      "docstring": "TC_VUL_041: Verify localStorage data maintains integrity.",
+      "duration": 0.057,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_no_hardcoded_credentials_in_source",
+      "outcome": "passed",
+      "docstring": "TC_VUL_042: Verify no hardcoded user credentials in page source.",
+      "duration": 0.081,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_react_development_mode_disabled",
+      "outcome": "passed",
+      "docstring": "TC_VUL_043: Verify React is not in development mode in production.",
+      "duration": 0.066,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_https_redirect_check",
+      "outcome": "passed",
+      "docstring": "TC_VUL_044: Verify the application structure supports HTTPS.",
+      "duration": 0.077,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_form_submission_is_spa",
+      "outcome": "passed",
+      "docstring": "TC_VUL_045: Verify form submissions are handled as SPA (no traditional POST).",
+      "duration": 0.077,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_iframe_embedding_check",
+      "outcome": "passed",
+      "docstring": "TC_VUL_046: Verify app content is accessible (iframe protection is server-side).",
+      "duration": 0.072,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_no_open_redirect",
+      "outcome": "passed",
+      "docstring": "TC_VUL_047: Verify no open redirect vulnerabilities via URL parameters.",
+      "duration": 0.086,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_form_action_attribute",
+      "outcome": "passed",
+      "docstring": "TC_VUL_048: Verify form does not have external action URL.",
+      "duration": 0.095,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_file_input_accept_attribute",
+      "outcome": "passed",
+      "docstring": "TC_VUL_049: Verify file input restricts to PDF MIME type.",
+      "duration": 0.051,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    },
+    {
+      "nodeid": "test_vulnerability.py::test_file_input_hidden",
+      "outcome": "passed",
+      "docstring": "TC_VUL_050: Verify file input is hidden from direct user interaction.",
+      "duration": 0.08,
+      "setup": {
+        "duration": 0.001
+      },
+      "call": {
+        "duration": 0.04
+      },
+      "teardown": {
+        "duration": 0.001
+      }
+    }
+  ]
+}

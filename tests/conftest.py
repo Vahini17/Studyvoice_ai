@@ -239,6 +239,31 @@ def inject_js(driver, script):
     return driver.execute_script(script)
 
 
+def inject_mock_auth(driver, email="student@studyvoice.ai", name="Student"):
+    """Inject mock user data into localStorage so home dashboard renders."""
+    try:
+        set_local_storage(driver, f"local_user_data_{email}", {
+            "streakDays": 5,
+            "totalListeningMinutes": 42,
+            "totalPdfsUploaded": 3
+        })
+        set_local_storage(driver, f"local_pdfs_{email}", [{
+            "id": "1",
+            "fileName": "Sample_Study_Notes.pdf",
+            "fileSize": "1.2 MB",
+            "pageCount": 5,
+            "uploadDate": "2026-07-22T00:00:00.000Z",
+            "textContent": "Sample study notes text for player component.",
+            "aiSummary": "✨ AI Summary\n- Bullet point 1\n- Bullet point 2",
+            "keywords": ["Study", "Notes"],
+            "subject": "Science",
+            "downloadUrl": "blob:http://localhost:8080/sample",
+            "lastReadPage": 0
+        }])
+    except Exception:
+        pass
+
+
 def get_console_logs(driver):
     """Get browser console logs."""
     try:
