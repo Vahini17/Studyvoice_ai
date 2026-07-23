@@ -1,0 +1,15 @@
+{
+  "name": "selenium-tests",
+  "version": "1.0.0",
+  "description": "Selenium Web E2E Testing Suite - 300+ Test Cases",
+  "main": "tests/login-tests.js",
+  "scripts": {
+    "test": "npx mocha tests/login-tests.js",
+    "generate-report": "node tests/login-tests.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "^4.15.0"
+  }
+}

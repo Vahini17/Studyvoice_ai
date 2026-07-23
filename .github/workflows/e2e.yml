@@ -1,0 +1,253 @@
+name: e2e.yml
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  # ── 1. Selenium — Website Tests (300) ───────────────────────────────
+  selenium_website_tests:
+    name: Selenium — Website Tests (300)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: selenium-tests
+        run: npm install --no-audit --no-fund
+
+      - name: Run E2E Tests
+        working-directory: selenium-tests
+        run: node tests/login-tests.js
+
+      - name: Upload Selenium Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: selenium-test-report
+          path: selenium-tests/reports/selenium-test-report.xlsx
+
+  # ── 2. Appium — Android Tests (300) ──────────────────────────────────
+  appium_android_tests:
+    name: Appium — Android Tests (300)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: appium-tests
+        run: npm install --no-audit --no-fund
+
+      - name: Run Appium Tests
+        working-directory: appium-tests
+        run: node scripts/generate_report.js
+
+      - name: Upload Appium Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: appium-test-report
+          path: appium-tests/reports/appium-test-report.xlsx
+
+  # ── 3. Backend — Vulnerability Tests (300) ───────────────────────────
+  backend_vulnerability_tests:
+    name: Backend — Vulnerability Tests (300)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: BrainBattleBackend
+        run: npm install --no-audit --no-fund
+
+      - name: Run Vulnerability Scan
+        working-directory: BrainBattleBackend
+        run: node scripts/backendVuln300.js
+
+      - name: Upload Vulnerability Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-vulnerability-report
+          path: BrainBattleBackend/reports/backend-vulnerability-report.xlsx
+
+  # ── 4. Validation Tests (300) ────────────────────────────────────────
+  validation_tests:
+    name: Validation Tests (300)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: appium-tests
+        run: npm install --no-audit --no-fund
+
+      - name: Run Validation Tests
+        working-directory: appium-tests
+        run: node scripts/validationTests300.js
+
+      - name: Upload Validation Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-test-report
+          path: appium-tests/reports/validation-test-report.xlsx
+
+  # ── 5. Deployment Status (300) ───────────────────────────────────────
+  deployment_status:
+    name: Deployment Status (300)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: appium-tests
+        run: npm install --no-audit --no-fund
+
+      - name: Run Deployment Status Checks
+        working-directory: appium-tests
+        run: node scripts/deploymentStatus300.js
+
+      - name: Upload Deployment Status Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: deployment-status-report
+          path: appium-tests/reports/deployment-status-report.xlsx
+
+  # ── 6. Backend — Load Tests (300) ────────────────────────────────────
+  backend_load_tests:
+    name: Backend — Load Tests (300)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: BrainBattleBackend
+        run: npm install --no-audit --no-fund
+
+      - name: Run Load Tests
+        working-directory: BrainBattleBackend
+        run: node scripts/backendLoadTest300.js
+
+      - name: Upload Load Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-load-test-report
+          path: BrainBattleBackend/reports/backend-load-test-report.xlsx
+
+  # ── 7. Compile Master Report & Deploy ────────────────────────────────
+  compile_master_report_and_deploy:
+    name: Compile Master Report & Deploy
+    runs-on: ubuntu-latest
+    needs:
+      - selenium_website_tests
+      - appium_android_tests
+      - backend_vulnerability_tests
+      - validation_tests
+      - deployment_status
+      - backend_load_tests
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: selenium-tests
+        run: npm install --no-audit --no-fund
+
+      # Download all 6 report artifacts
+      - name: Download Selenium Report
+        uses: actions/download-artifact@v4
+        with:
+          name: selenium-test-report
+          path: selenium-tests/reports
+
+      - name: Download Appium Report
+        uses: actions/download-artifact@v4
+        with:
+          name: appium-test-report
+          path: appium-tests/reports
+
+      - name: Download Vulnerability Report
+        uses: actions/download-artifact@v4
+        with:
+          name: backend-vulnerability-report
+          path: BrainBattleBackend/reports
+
+      - name: Download Validation Report
+        uses: actions/download-artifact@v4
+        with:
+          name: validation-test-report
+          path: appium-tests/reports
+
+      - name: Download Deployment Status Report
+        uses: actions/download-artifact@v4
+        with:
+          name: deployment-status-report
+          path: appium-tests/reports
+
+      - name: Download Load Report
+        uses: actions/download-artifact@v4
+        with:
+          name: backend-load-test-report
+          path: BrainBattleBackend/reports
+
+      # Compile everything into master-report/
+      - name: Compile Master Report
+        working-directory: selenium-tests
+        run: node scripts/compile_master_report.js
+
+      # Upload final combined report package
+      - name: Upload Master Report Pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: Master-Test-Report-Pack
+          path: master-report/
+
+      # Deploy Master Dashboard to GitHub Pages
+      - name: Deploy Master Dashboard to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: master-report
+          target-folder: reports/latest
+          branch: gh-pages
+          clean: false
