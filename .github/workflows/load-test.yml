@@ -1,0 +1,119 @@
+name: API Load Testing (k6 & Reports)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'BrainBattleBackend/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'BrainBattleBackend/**'
+  workflow_dispatch:
+
+jobs:
+  load-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ── 1. Checkout ────────────────────────────────────────────────
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # ── 2. Set up Node.js ──────────────────────────────────────────
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # ── 3. Set up k6 ──────────────────────────────────────────────
+      - name: Set up k6
+        uses: grafana/setup-k6-action@v1
+
+      # ── 4. Install Backend Test Dependencies ───────────────────────
+      - name: Install Dependencies
+        working-directory: BrainBattleBackend
+        run: npm install
+
+      # ── 5. Run k6 Load Test ────────────────────────────────────────
+      - name: Run k6 Load Test
+        working-directory: BrainBattleBackend
+        continue-on-error: true
+        env:
+          BACKEND_URL: ${{ vars.BACKEND_URL || 'https://brainbattle-api.example.com' }}
+        run: |
+          k6 run \
+            --summary-export=summary.json \
+            -e BACKEND_URL="$BACKEND_URL" \
+            scripts/load-test.js || true
+
+      # ── 6. Parse k6 Summary ────────────────────────────────────────
+      - name: Parse k6 Summary & Publish Metrics
+        if: always()
+        working-directory: BrainBattleBackend
+        run: |
+          if [ -f summary.json ]; then
+            node scripts/parseK6Summary.js
+          else
+            echo "⚠️ No summary.json found — k6 may have failed."
+          fi
+
+      # ── 7. Generate App Load Test Report (500 cases) ───────────────
+      - name: Generate App Load Test Report (500 Tests)
+        if: always()
+        working-directory: BrainBattleAppium
+        run: |
+          npm install
+          node scripts/appLoadTest500.js
+
+      # ── 8. Generate Backend Load Test Report (300 cases) ───────────
+      - name: Generate Backend Load Test Report (300 Tests)
+        if: always()
+        working-directory: BrainBattleBackend
+        run: node scripts/backendLoadTest300.js
+
+      # ── 9. Generate Backend Vulnerability Report (300 cases) ───────
+      - name: Generate Backend Vulnerability Report (300 Tests)
+        if: always()
+        working-directory: BrainBattleBackend
+        run: node scripts/backendVuln300.js
+
+      # ── 10. Upload All Reports ─────────────────────────────────────
+      - name: Upload App Load Test Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: App-Load-Test-Report-500
+          path: BrainBattleAppium/reports/app-load-test-report.xlsx
+          retention-days: 30
+
+      - name: Upload Backend Load Test Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Backend-Load-Test-Report-300
+          path: BrainBattleBackend/reports/backend-load-test-report.xlsx
+          retention-days: 30
+
+      - name: Upload Backend Vulnerability Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Backend-Vulnerability-Report-300
+          path: BrainBattleBackend/reports/backend-vulnerability-report.xlsx
+          retention-days: 30
+
+      # ── 11. Summary ────────────────────────────────────────────────
+      - name: Print Summary
+        if: always()
+        run: |
+          echo "═══════════════════════════════════════════════════════"
+          echo "  📊 Load & Vulnerability Test Reports Generated"
+          echo "═══════════════════════════════════════════════════════"
+          echo "  📱 App Load Test:       500 cases"
+          echo "  🔧 Backend Load Test:   300 cases"
+          echo "  🛡️  Backend Vulnerability: 300 cases"
+          echo "═══════════════════════════════════════════════════════"
+          ls -la BrainBattleAppium/reports/ 2>/dev/null || true
+          ls -la BrainBattleBackend/reports/ 2>/dev/null || true

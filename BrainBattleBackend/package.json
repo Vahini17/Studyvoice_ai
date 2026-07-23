@@ -1,0 +1,14 @@
+{
+  "name": "brainbattle-backend-tests",
+  "version": "1.0.0",
+  "description": "BrainBattle Backend — Load Testing & Vulnerability Scanning",
+  "private": true,
+  "scripts": {
+    "load:test": "node scripts/backendLoadTest300.js",
+    "vuln:test": "node scripts/backendVuln300.js",
+    "k6:parse": "node scripts/parseK6Summary.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

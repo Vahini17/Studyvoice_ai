@@ -1,0 +1,25 @@
+{
+  "name": "brainbattle-appium",
+  "version": "1.0.0",
+  "description": "BrainBattle Android E2E Appium Test Suite — 1,111 parameterized tests",
+  "private": true,
+  "scripts": {
+    "test": "npx wdio run wdio.conf.js",
+    "test:ci": "WDIO_CI_SPEC=tests/12_e2e/mega_android_1100.test.js npx wdio run wdio.conf.js",
+    "report:fallback": "node utils/generateFallbackReport.js",
+    "report:html": "node utils/generateHtmlReport.js",
+    "report:summary": "node utils/generateSummary.js",
+    "load:app": "node scripts/appLoadTest500.js",
+    "load:backend": "node scripts/backendLoadTest300.js"
+  },
+  "dependencies": {
+    "@wdio/cli": "^8.29.0",
+    "@wdio/local-runner": "^8.29.0",
+    "@wdio/mocha-framework": "^8.29.0",
+    "@wdio/spec-reporter": "^8.29.0",
+    "appium": "^2.4.0",
+    "appium-uiautomator2-driver": "^3.0.0",
+    "exceljs": "^4.4.0",
+    "webdriverio": "^8.29.0"
+  }
+}
